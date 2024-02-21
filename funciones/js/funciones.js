@@ -9,7 +9,7 @@ function numerosPares() {
     let m = parseInt(prompt("Ingrese el valor de m:"))
     for (let i = n; i <= m; i++) {
         if (i % 2 === 0) {
-            console.log(i);
+            console.log(i)
         }
     }
 }
@@ -79,11 +79,10 @@ function datosPersona() {
     console.log("Apellido: " + apellido)
     console.log("Edad: " + edad)
     console.log("Cargo: " + cargo)
-
 }
 
-let numero
 function tablaMultiplicar() {
+    let numero
     numero = Number(prompt("Número a multiplicar:"))
     for (let i = 1; i <= 10; i++) {
         console.log(numero + " x " + i + " = " + (numero * i))
@@ -120,7 +119,9 @@ function menu() {
     let opcion;
     let ejecuciones = {};
     do {
-        opcion = prompt("Menú de opciones: \n1. Calcular salario de un empleado \n2. Mostrar números pares \n3. Calculadora \n4. Ingresar datos de una persona \n5. Mostrar tabla de multiplicar \n6. Calcular área y perímetro de una figura \n7. Finalizar");
+        opcion = prompt("Menú de opciones: \n1. Calcular salario de un empleado \n2. Mostrar números pares \n" +
+                        "3. Calculadora \n4. Ingresar datos de una persona \n5. Mostrar tabla de multiplicar \n" +
+                        "6. Calcular área y perímetro de una figura \n7. Finalizar")
         opcion = Number(opcion)
         switch (opcion) {
             case 1:
